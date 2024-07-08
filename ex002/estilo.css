@@ -1,0 +1,75 @@
+body{
+    background: rgb(255, 255, 255);
+    font: normal 16pt arial;
+}
+header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.apresentação{
+    margin: 20px;
+    text-align: left;
+}
+section{
+    background: rgb(221, 221, 221);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.623);
+}
+input#Peso,input#Altura{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 30%;
+    box-sizing: border-box;
+}
+input#Peso:focus, input#Altura:focus{
+    border-color: #1eff00;
+    outline: none;
+}
+input#Peso::placeholder,input#Altura::placeholder{
+    color: #888;
+}
+input#bt{
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.692);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+input#bt:hover{
+    background-color: #1eff00;
+    
+}
+input#bt:active{
+    background-color: #009200;
+}
+input#bt:focus{
+    outline: none;
+}
+footer{
+    color: white;
+    font-size: italic;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    input[type="button"] {
+        font-size: 14px;
+    }
+}
