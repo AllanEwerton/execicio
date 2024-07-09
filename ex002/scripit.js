@@ -9,7 +9,9 @@ function Calcular(){
     var a = Number(alt.value)
     var imc = p/a**2
     var imc_f = imc.toFixed(2)
-    if(!isNaN(p)  && !isNaN(a)){
+    if(isNaN(p) || isNaN(a) || p <= 0 || a <= 0){
+        window.alert(`Erro!!! verifique as informações e tente novamente.`)
+    }else{
         if(imc <18.5){
             inf.innerHTML= `Seu <strong>IMC</strong> é: ${imc_f}. Você está abaixo do peso. Que tal procurar um nutricionista para dar uma força?`
             img.src ='img/zello_saudedoenca-removebg-preview (1).png'
@@ -29,7 +31,6 @@ function Calcular(){
             inf.innerHTML= `Seu <strong>IMC</strong> é: ${imc_f}. Obesidade grau III. É importante buscar ajuda médica agora.`
             img.src ='img/zello_saudedoenca-removebg-preview (1).png'
         }
-    }else{
-        inf.innerHTML=`<strong>Erro</strong> verifique as informações e tente novamente`
+        
     }
 }
