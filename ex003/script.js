@@ -38,6 +38,5 @@ function Contar(){
             bt.disabled = false;
         }, 1000); 
         res.style.display='none';
-            res.style.box-shadow;'none';
         }
     }
