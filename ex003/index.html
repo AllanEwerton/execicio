@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Calculadora</title>
 </head>
 <body>
@@ -19,15 +20,18 @@
             <input type="number" name="" id="fim" placeholder="Fim">
             <input type="number" name="" id="npulo"
             placeholder="Quantidade de números a pular">
-            <input id="bnt" type="button" value="Contar">
         </div>
-        <div id="rest">
-
+        <div id="rest"></div>
+        <div class="spinner-border text-success" role="status" style="display: none; margin: auto;">
+            <span class="visually-hidden">Loading...</span>
         </div>
+        <input id="bnt" type="button" value="Contar">
     </section>
     <footer>
         <p>&COPY;Zicavr</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </body>
 </html>
